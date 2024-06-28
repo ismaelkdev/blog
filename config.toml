@@ -1,0 +1,28 @@
+# The URL the site will be built for
+base_url = "https://example.com"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+theme = "duckquill"
+
+title = "Home"
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+# Put all your custom variables here
+
+primary_color = "#ff7800"
+# Same as primary_color, but with 20% opacity
+primary_color_alpha = "rgba(255, 120, 0, 0.2)"
+
+[extra.nav]
+links = [
+  {url = "@/blog/_index.md", name = "Blog"},
+]
